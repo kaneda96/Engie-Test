@@ -1,11 +1,13 @@
 using AutoMapper;
 using Engie_Test.Entitites;
 using Engie_Test.ViewModels;
+using Engie_Test.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace Engie_Test
 {
@@ -33,7 +35,7 @@ namespace Engie_Test
 
             services.AddSingleton(mapper);
 
-            services.AddDbContext<Data.MainDbContext>();
+            services.AddDbContext<MainDbContext>(options => options.UseSqlServer(@"Data Source=(localdb)\\MSSQLLocalDB;Database=engie_bruno_ferrari;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
             services.AddControllersWithViews();
         }
 

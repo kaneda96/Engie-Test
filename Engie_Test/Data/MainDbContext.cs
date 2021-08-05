@@ -13,13 +13,7 @@ namespace Engie_Test.Data
 
 
             
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"");            
-        }
-
+        }      
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

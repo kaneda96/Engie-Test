@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\Engie_Test.csproj": {}
+    "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\Engie_Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\Engie_Test.csproj": {
+    "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\Engie_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\Engie_Test.csproj",
+        "projectUniqueName": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\Engie_Test.csproj",
         "projectName": "Engie_Test",
-        "projectPath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\Engie_Test.csproj",
+        "projectPath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\Engie_Test.csproj",
         "packagesPath": "C:\\Users\\kaned\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\obj\\",
+        "outputPath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kaned\\AppData\\Roaming\\NuGet\\NuGet.Config",

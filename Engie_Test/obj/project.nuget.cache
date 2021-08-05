@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dy3ebwevRsjYTj2Yj61u4NBKEJQoZ5TySsHnW5BOKxqK5Ow2OKKVUENPLeTeijDU5oJ2vcjfZN1q3H0XoUnXOw==",
+  "dgSpecHash": "UUUoId0RdbHzIQFVu1ON5zWQF8FjFVVEw88Q1TWknnqLHp2TrtGfkJRsTf4jopJNRIf8bVFGjFKVoiMi7dWCaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Engie_Test\\Engie_Test\\Engie_Test.csproj",
+  "projectFilePath": "C:\\Users\\kaned\\Desktop\\cursos\\processsos\\Nova pasta\\Engie-Test\\Engie_Test\\Engie_Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kaned\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\kaned\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
