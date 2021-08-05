@@ -1,0 +1,81 @@
+﻿@model Engie_Test.ViewModels.PowerPlantViewModels
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PowerPlantViewModels</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @*<form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="PowerPlantId" />
+                <div class="form-group">
+                    <label asp-for="PowerPlantUC" class="control-label"></label>
+                    <input asp-for="PowerPlantUC" class="form-control" />
+                    <span asp-validation-for="PowerPlantUC" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ProviderId" class="control-label"></label>
+                    <select asp-for="ProviderId" class="form-control" asp-items="ViewBag.ProviderId"></select>
+                    <span asp-validation-for="ProviderId" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Enabled" /> @Html.DisplayNameFor(model => model.Enabled)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="created_at" class="control-label"></label>
+                    <input asp-for="created_at" class="form-control" />
+                    <span asp-validation-for="created_at" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="updated_at" class="control-label"></label>
+                    <input asp-for="updated_at" class="form-control" />
+                    <span asp-validation-for="updated_at" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>*@
+        @using (Html.BeginForm())
+        {
+            @Html.EditorFor(prop => prop.PowerPlantId, new { HtmlAttributes = new { @hidden = "hidden" } })
+            <div class="form-group">
+                @Html.LabelFor(model => model.PowerPlantUC, htmlAttributes: new { @class = "control-label col-md-10" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PowerPlantUC, new { HtmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PowerPlantUC, "", htmlAttributes: new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProviderId, htmlAttributes: new { @class = "control-label col-md-10" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(model => model.ProviderId, new SelectList(ViewBag.ProvidersList, "Id", "Name"), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ProviderId, "", htmlAttributes: new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group custom-control custom-switch">
+                <div class="col-md-10">
+                    @*  @Html.DisplayNameFor(model => model.Enabled)*@
+                    @Html.CheckBoxFor(model => model.Enabled, new { @class = "custom-control-input", @checked = true })
+                    <label class="custom-control-label" for="Enabled">@Html.DisplayNameFor(prop => prop.Enabled)</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            </div>
+        }
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

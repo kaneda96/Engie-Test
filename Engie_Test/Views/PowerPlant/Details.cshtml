@@ -1,0 +1,53 @@
+﻿@model Engie_Test.ViewModels.PowerPlantViewModels
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PowerPlantUC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PowerPlantUC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+        <dd class="col-sm-10">
+            <div class="custom-control custom-switch">
+                @Html.CheckBoxFor(model => model.Enabled, new { @class = "custom-control-input", @checked = true, @disabled = true })
+                <label class="custom-control-label" for="Enabled"></label>
+            </div>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Provider)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Provider.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+        <dd class="col-sm-10">
+           
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.updated_at)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.updated_at)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new  {Id = Model.PowerPlantId }) |
+    @Html.ActionLink("Back to List","Index")
+    
+</div>

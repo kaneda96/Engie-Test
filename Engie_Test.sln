@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engie_Test", "Engie_Test\Engie_Test.csproj", "{027F686D-4F56-48A6-A252-F9DD73917D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027F686D-4F56-48A6-A252-F9DD73917D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027F686D-4F56-48A6-A252-F9DD73917D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027F686D-4F56-48A6-A252-F9DD73917D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027F686D-4F56-48A6-A252-F9DD73917D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F2B7420-6BDE-4A1F-92E1-654DD6B8E30B}
+	EndGlobalSection
+EndGlobal
