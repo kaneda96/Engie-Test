@@ -35,7 +35,7 @@ namespace Engie_Test
 
             services.AddSingleton(mapper);
 
-            services.AddDbContext<MainDbContext>(options => options.UseSqlServer(@"Data Source=(localdb)\\MSSQLLocalDB;Database=engie_bruno_ferrari;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
+            services.AddDbContext<MainDbContext>();
             services.AddControllersWithViews();
         }
 

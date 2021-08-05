@@ -13,7 +13,12 @@ namespace Engie_Test.Data
 
 
             
-        }      
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=engie_bruno_ferrari");
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -53,9 +53,9 @@ namespace Engie_Test.Controllers
             }
 
             int pageSize = 10;
-            int pageNumber = (page ?? 1);           
+            int pageNumber = (page ?? 1);
 
-            var pagedList = await query.ToPagedListAsync(pageNumber, pageSize);
+            var pagedList = await query.OrderBy(l => l.CreatedAt).ToPagedListAsync(pageNumber, pageSize);
 
             return  View(pagedList);
         }       
@@ -88,6 +88,8 @@ namespace Engie_Test.Controllers
                 if (ModelState.IsValid)
                 {
                   var powerPlant =  _mapper.Map<PowerPlant>(powerPlantViewModels);
+                    powerPlant.CreatedAt = DateTime.Now;
+                    powerPlant.UpdatedAt = DateTime.Now;
 
                  var insert =  _context.Add(powerPlant);
 
@@ -125,6 +127,8 @@ namespace Engie_Test.Controllers
             try
             {
                 var powerPlant = _mapper.Map<PowerPlant>(powerPlantViewModels);
+                
+                powerPlant.UpdatedAt = DateTime.Now;
 
                 _context.PowerPlants.Update(powerPlant);
 
